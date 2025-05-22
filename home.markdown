@@ -5,3 +5,4 @@ permalink: "/"
 layout: default
 ---
 
+{% include hero.html %}
