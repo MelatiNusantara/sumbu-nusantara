@@ -5,5 +5,3 @@ permalink: "/"
 layout: default
 ---
 
-{% include header.html %}
-{% include footer.html %}
