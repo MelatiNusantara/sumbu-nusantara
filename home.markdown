@@ -6,3 +6,4 @@ layout: default
 ---
 
 {% include hero.html %}
+{% include heritage.html %}
