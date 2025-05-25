@@ -1,0 +1,67 @@
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dampak Sumbu Nusantara</title>
+  <link rel="stylesheet" href="impact.css" />
+</head>
+<body>
+
+  <section class="impact-section" id="impact">
+    <div class="impact-container">
+      <h2 class="impact-title">
+        <span class="impact-decor">✦</span>
+        Dampak Kami
+        <span class="impact-decor">✦</span>
+      </h2>
+      <p class="impact-subtitle">
+        Jejak langkah Sumbu Nusantara dalam melestarikan budaya, memperkuat jati diri, dan memberdayakan masyarakat adat.
+      </p>
+
+      <div class="impact-grid">
+        <div class="impact-card fade-in">
+          <img src="assets/images/impact1.jpg" alt="Pelestarian Cagar Budaya" />
+          <h3>Revitalisasi Cagar Budaya</h3>
+          <p>Kami telah merevitalisasi 12 situs bersejarah yang hampir punah menjadi ruang edukatif dan interaktif untuk generasi muda.</p>
+        </div>
+        <div class="impact-card fade-in">
+          <img src="assets/images/impact2.jpg" alt="Festival Budaya" />
+          <h3>Festival Budaya</h3>
+          <p>Lebih dari 10.000 pengunjung menghadiri Festival Warisan Budaya Nusantara yang kami selenggarakan di 8 provinsi.</p>
+        </div>
+        <div class="impact-card fade-in">
+          <img src="assets/images/impact3.jpg" alt="Pemberdayaan Masyarakat" />
+          <h3>Pemberdayaan Komunitas</h3>
+          <p>Ratusan pengrajin lokal kini memiliki akses pasar melalui program digitalisasi kerajinan tangan berbasis warisan budaya.</p>
+        </div>
+        <div class="impact-card fade-in">
+          <img src="assets/images/impact4.jpg" alt="Literasi Budaya" />
+          <h3>Literasi Budaya</h3>
+          <p>Lebih dari 15.000 siswa telah mengikuti program edukasi budaya yang kami integrasikan ke dalam kurikulum lokal.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+        const cards = document.querySelectorAll(".impact-card");
+
+        function revealOnScroll() {
+            const scrollTop = window.scrollY;
+            const windowHeight = window.innerHeight;
+
+            cards.forEach((card) => {
+            const cardTop = card.getBoundingClientRect().top + scrollTop;
+            if (scrollTop + windowHeight > cardTop + 100) {
+                card.classList.add("visible");
+            }
+            });
+        }
+
+        window.addEventListener("scroll", revealOnScroll);
+        revealOnScroll(); // run on load
+    });
+  </script>
+</body>
+</html>
