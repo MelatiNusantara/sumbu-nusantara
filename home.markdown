@@ -8,4 +8,5 @@ layout: default
 {% include hero.html %}
 {% include about.html %}
 {% include service.html %}
+{% include process.html %}
 {% include impact.html %}
