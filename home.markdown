@@ -9,4 +9,5 @@ layout: default
 {% include about.html %}
 {% include service.html %}
 {% include process.html %}
+{% include stats.html %}
 {% include impact.html %}
